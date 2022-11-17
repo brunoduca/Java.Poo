@@ -1,0 +1,14 @@
+ public void maximoComunDivisor() {
+        int temporal;
+        int temporal2;
+        while (f1.getDenominador1() != 0) {
+            temporal = f1.getDenominador1();
+            f1.setDenominador1(f1.getNumerador1() % f1.getDenominador1());
+            f1.setNumerador1(temporal);
+        }
+        while (f1.getDenominador2() != 0) {
+            temporal = f1.getDenominador1();
+            f1.setDenominador1(f1.getNumerador2() % f1.getDenominador2());
+            f1.setNumerador2(temporal);
+        }
+    }
